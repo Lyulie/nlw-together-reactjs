@@ -1,0 +1,17 @@
+$dark-gray : #29292e;
+$warm-white : #f8f8f8;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $warm-white;
+    color: $dark-gray;
+}
+
+body, input, button, textarea {
+    font: 400 16px 'Roboto', sans-serif;
+}

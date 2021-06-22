@@ -1,0 +1,36 @@
+$light-purple : #835afd;
+$white : #fff;
+$warm-white: #f8f8f8;
+$light-gray : #a8a8b3;
+$orange-red: #ea4335;
+
+.button {
+    margin-top: 64px;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: $light-purple;
+    color: $white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border: 0;
+
+    transition: filter 0.2s;
+
+    img {
+        margin-right: 8px;
+    }
+
+    &:not(:disabled):hover {
+        filter: brightness(.9);
+    }
+
+    &:disabled {
+        opacity: .6;
+        cursor: not-allowed;
+    }
+}
